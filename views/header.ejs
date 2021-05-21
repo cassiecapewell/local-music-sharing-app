@@ -1,0 +1,16 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>app</title>
+    <script src="https://kit.fontawesome.com/5057e8ccf8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <header>
+    <span>name</span>
+    <% if(typeof user === "undefined"){ %>
+      <a href="/login" id=logInButton><button id="logo">log in</button></a>
+
+    <% }else{ %>
+      <a href="/login" id=logInButton><button id="logo">log out</button></a>
+    <% } %>
+  </header>
