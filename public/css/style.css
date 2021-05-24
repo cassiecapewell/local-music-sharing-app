@@ -7,8 +7,9 @@ header{
   justify-content: space-between;
 }
 
-span{
+h2 a{
   margin: 30px 50px;
+  text-decoration: none;
 }
 
 #logInButton{
@@ -29,7 +30,7 @@ iframe{
   margin-top: 75px;
 }
 
-a{
+.playlist{
   display: flex;
   justify-content: center;
   margin: 30px 0px;

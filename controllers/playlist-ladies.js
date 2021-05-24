@@ -2,6 +2,6 @@ const Playlist = require('../models/Playlist')
 
 module.exports = {
     getPlaylist: (req,res)=>{
-        res.render('playlist.ejs')
+        res.render('playlist-ladies.ejs')
     }
 }
