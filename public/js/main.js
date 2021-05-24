@@ -2,8 +2,8 @@
 
 const APIController = (function() {
 
-  const client_id = "5d6751bd512a48c6a944be876b576a5c";
-  const client_secret = "65753fa304a14f88955601ae01dae864"; // In a real app you should not expose your client_secret to the user
+  const client_id = "";
+  const client_secret = ""; // In a real app you should not expose your client_secret to the user
 
     // private methods
     const _getToken = async () => {
