@@ -10,6 +10,9 @@ const playlistLadiesRoutes = require('./routes/playlist-ladies')
 const playlistHardRoutes = require('./routes/playlist-hard')
 const playlistSadRoutes = require('./routes/playlist-sad')
 const playlistFunkiRoutes = require('./routes/playlist-funki')
+const aboutRoutes = require('./routes/about')
+const eventsRoutes = require('./routes/events')
+const featuredRoutes = require('./routes/featured')
 
 
 require('dotenv').config({path: './config/.env'})
@@ -28,6 +31,11 @@ app.use('/playlist-ladies', playlistLadiesRoutes)
 app.use('/playlist-hard', playlistHardRoutes)
 app.use('/playlist-sad', playlistSadRoutes)
 app.use('/playlist-funki', playlistFunkiRoutes)
+app.use('/about', aboutRoutes)
+app.use('/events', eventsRoutes)
+app.use('/featured', featuredRoutes)
+
+
 
 
 app.listen(process.env.PORT, ()=>{
