@@ -21,7 +21,7 @@ module.exports = {
           querystring.stringify({
             response_type: 'code',
             client_id: process.env.client_id,
-            scope: 'user-read-private user-read-email',
+            scope: 'user-read-currently-playing',
             redirect_uri
           }))
       })
@@ -45,9 +45,9 @@ module.exports = {
           var access_token = body.access_token
           let uri = redirect_uri
           res.redirect(uri + '?access_token=' + access_token)
-        })
-      })
-  },
+        }) // end of post request
+      }) // end of callback
+  }, // end of getLogin method
 
   getCurrentlyPlaying: async (access_token)=>{
       const result = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
