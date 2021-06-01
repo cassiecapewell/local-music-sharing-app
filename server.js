@@ -45,6 +45,6 @@ app.use('/login', loginRoutes)
 
 
 
-app.listen(process.env.PORT || 80, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log('Server is running, you better catch it!')
 })
