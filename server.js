@@ -2,6 +2,12 @@ const express = require('express')
 const app = express()
 // const mongoose = require('mongoose')
 // const MongoStore = require('connect-mongo')(session)
+var request = require('request'); // "Request" library
+var querystring = require('querystring');
+var cookieParser = require('cookie-parser');
+var cors = require('cors');
+// const querystring = require('querystring');
+
 const connectDB = require('./config/database')
 const homeRoutes = require('./routes/home')
 const playlistLitRoutes = require('./routes/playlist-lit')
@@ -13,6 +19,7 @@ const playlistFunkiRoutes = require('./routes/playlist-funki')
 const aboutRoutes = require('./routes/about')
 const eventsRoutes = require('./routes/events')
 const featuredRoutes = require('./routes/featured')
+const loginRoutes = require('./routes/login')
 
 
 require('dotenv').config({path: './config/.env'})
@@ -34,6 +41,7 @@ app.use('/playlist-funki', playlistFunkiRoutes)
 app.use('/about', aboutRoutes)
 app.use('/events', eventsRoutes)
 app.use('/featured', featuredRoutes)
+app.use('/login', loginRoutes)
 
 
 
