@@ -24,7 +24,7 @@ const loginRoutes = require('./routes/login')
 
 require('dotenv').config({path: './config/.env'})
 
-connectDB()
+// connectDB()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
