@@ -25,6 +25,7 @@
     "passport": "^0.4.1",
     "querystring": "^0.2.1",
     "request": "^2.88.2",
-    "session": "^0.1.0"
+    "session": "^0.1.0",
+    "spotify-login": "^0.2.0"
   }
 }

@@ -6,6 +6,8 @@ var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 var cors = require('cors');
+const spotifyLogin = require('spotify-login')
+// ??? ^
 // const querystring = require('querystring');
 
 const connectDB = require('./config/database')
@@ -45,6 +47,6 @@ app.use('/login', loginRoutes)
 
 
 
-app.listen(process.env.PORT || PORT, ()=>{
+app.listen(process.env.PORT || 8080, ()=>{
     console.log('Server is running, you better catch it!')
 })
